@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Ejemplos de pseudoclases y pseudoelementos</h1>
+    <h2>1. Pseudoclases (Estados e interaccion)</h2>
+    <div class="componente">
+        <h3>:hover</h3>
+        <p>EL color cambia al pasar el raton por encima</p>
+        <button class="btn-hover">Pasa el raton por aqui</button>
+    </div>
+    <div class="componente">
+        <h3>:focus</h3>
+        <p>El color cambia al hacer foco en el input</p>
+        <input class="input-focus" type="text" placeholder="Haz foco aqui">
+    </div>
+    <div class="componente">
+        <h3>:active</h3>
+        <p>El color cambia al hacer click en el boton</p>
+        <button class="btn-active">Haz click aqui</button>
+    </div>
+
+    <div class="componente">
+        <h3>:first-child</h3>
+        <p>El primer elemento de la lista tiene un color diferente</p>
+        <ul>
+            <li class="first-child">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>   
+    </div>
+    <div class="componente">
+        <h2>2. Pseudoelementos (Elementos ficticios)</h2>
+        <h3>::before</h3>
+        <p class="before-example">Este parrafo tiene un contenido antes del texto</p>
+
+        <h3>::after</h3>
+        <p class="after-example">Este parrafo tiene un contenido despues del texto</p>
+    </div>
+</body>
+
+</html>

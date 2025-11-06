@@ -1,0 +1,99 @@
+/* Configuraciones Globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Selector de clases */
+.contenedor-general {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aviso {
+    text-align: center;
+    color: #6fabe7;
+    margin-bottom: 20px;
+
+}
+
+/* Margin: arriba, derecha, abajo, izquierda (poniendo 4 posiciones )(si pongo dos: arriba y abajo, izquierda y derecha)*/
+/* padding: 10px 50px 30px 0; (De igual manera que margin) */
+
+
+.btn-hover {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hover:hover {
+    background-color: #0056b3;
+    color: #191818;
+
+}
+
+.input-focus {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.input-focus:focus {
+    border-color: #007BFF;
+    outline: none;
+    /* Anulamos el efecto del navegador */
+}
+
+.btn-active {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efecto al hacer click */
+.btn-active:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+.first-child {
+    background-color: #ffeb3b;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.before-example::before {
+    content: "Nota: ";
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.after-example::after {
+    content: " - Fin del ejemplo.";
+    font-style: italic;
+    color: #9c27b0;
+}
