@@ -97,3 +97,9 @@ body {
     font-style: italic;
     color: #9c27b0;
 }
+
+.first-letter-example::first-letter {
+    font-size: 200%;
+    color: #ff5722;
+    font-weight: bold;
+}
